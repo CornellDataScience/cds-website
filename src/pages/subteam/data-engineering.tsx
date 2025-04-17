@@ -27,7 +27,7 @@ import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import LeonImg from "../../assets/img/members/default.jpg";
 import ProfTrummerImg from "../../assets/img/members/default.jpg";
 import KojiImg from "../../assets/img/members/KojiKimura.jpg";
-import RohitVakkalagadda from "../../assets/img/members/default.jpg";
+import RohitVakkalagadda from "../../assets/img/members/Rohit.jpg";
 import MukundGaur from "../../assets/img/members/default.jpg";
 import AndrewImg from "../../assets/img/members/default.jpg";
 import MichaelImg from "../../assets/img/members/MichaelNgo.jpg";
