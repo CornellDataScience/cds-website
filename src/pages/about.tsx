@@ -1,5 +1,5 @@
-import React from "react";
 import Layout from "@/components/Layout";
+import React from "react";
 import "../assets/css/about.css";
 import img from "../assets/img/team4.jpg";
 
@@ -63,6 +63,19 @@ const About: React.FC = () => {
                 whether by meeting our diverse team, participating in our
                 educational offerings, or joining us at one of our upcoming
                 events.
+              </p>
+              <br></br>
+              <h1 className="text-5xl mt-5">Equal Education and Employment</h1>
+              <p className="text-xl text-light mt-5">
+                With a founding principle of “... any person ... any study,”
+                Cornell is an equal opportunity employer and educator.
+                <br></br>
+                Cornell Data Science is committed to providing{" "}
+                <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+                  className="text-blue-500"
+                >
+                  equal education and employment
+                </a>.
               </p>
             </div>
           </div>
