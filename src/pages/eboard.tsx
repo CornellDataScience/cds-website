@@ -1,74 +1,74 @@
-import React from "react";
 import Layout from "@/components/Layout";
-import "../assets/css/about.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import "../assets/css/about.css";
 
-import KojiImg from "../assets/img/members/KojiKimura.jpg";
-import AbbyImg from "../assets/img/members/AbigailKim.jpg";
-import AudreyImg from "../assets/img/members/AudreyWang.jpg";
-import MichaelImg from "../assets/img/members/MichaelNgo.jpg";
-import MaxImg from "../assets/img/members/MaxWang.jpg";
-import CindyImg from "../assets/img/members/CindyLi.jpg";
+import AbigailImg from "../assets/img/members/AbigailKim.jpg";
 import DanielImg from "../assets/img/members/DanielWang.jpg";
-import SriImg from "../assets/img/members/SrivatsaKundurthy.jpg";
+import LeoImg from "../assets/img/members/LeoQian.jpg";
+import MericelImg from "../assets/img/members/MericelTao.jpg";
+import MichelleImg from "../assets/img/members/MichelleZhou.jpg";
+import NoahImg from "../assets/img/members/NoahPlant.jpg";
+import SabrinaImg from "../assets/img/members/SabrinaNing.jpg";
+import SkaiImg from "../assets/img/members/SkaiNzeuton.jpg";
 
 const eboardMembers = [
   {
     title: "President",
-    name: "Koji Kimura",
+    name: "Abigail Kim",
     description: "Sample Text",
-    img: KojiImg.src,
-    linkedin: 'https://www.linkedin.com/in/koji-kimura-30471a233/', // No LinkedIn URL found in the data
+    img: AbigailImg.src,
+    linkedin: null,
   },
   {
     title: "Vice President",
-    name: "Abigail Kim",
+    name: "Skai Nzeuton",
     description: "Sample Text",
-    img: AbbyImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    img: SkaiImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Ed Chair",
+    name: "Mericel Tao",
+    description: "Sample Text",
+    img: MericelImg.src,
+    linkedin: null,
   },
   {
     title: "Business Chair",
-    name: "Audrey Wang",
+    name: "Sabrina Ning",
     description: "Sample Text",
-    img: AudreyImg.src,
-    linkedin: "https://www.linkedin.com/in/audreywang12", // LinkedIn URL from the data
+    img: SabrinaImg.src,
+    linkedin: null,
   },
   {
-    title: "Technical Chair",
+    title: "Onboarding Chair",
+    name: "Noah Plant",
+    description: "Sample Text",
+    img: NoahImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Social Chair",
+    name: "Leo Qian",
+    description: "Sample Text",
+    img: LeoImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Tech Chair",
     name: "Daniel Wang",
     description: "Sample Text",
     img: DanielImg.src,
     linkedin: 'https://www.linkedin.com/in/zhongxuanwang/',
   },
   {
-    title: "Onboarding Chair",
-    name: "Michael Ngo",
-    description: "Sample Text",
-    img: MichaelImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Social Chair",
-    name: "Max Wang",
-    description: "Sample Text",
-    img: MaxImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
     title: "Publicity Chair",
-    name: "Cindy Li",
+    name: "Michelle Zhou",
     description: "Sample Text",
-    img: CindyImg.src,
-    linkedin: "https://www.linkedin.com/in/cindy-li-569a30187/", // LinkedIn URL from the data
-  },
-  {
-    title: "Education Chair",
-    name: "Srivatsa Kundurthy",
-    description: "Sample Text",
-    img: SriImg.src,
-    linkedin: "https://www.linkedin.com/in/riert", // LinkedIn URL from the data
+    img: MichelleImg.src,
+    linkedin: null,
   },
 ];
 
