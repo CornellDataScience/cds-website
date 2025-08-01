@@ -1,101 +1,101 @@
-import React from "react";
 import Layout from "@/components/Layout";
 import Subteam from "@/components/Subteam";
+import React from "react";
 
-import SkylerImg from "../../assets/img/members/SkylerShapiro.jpg";
-import MericelImg from "../../assets/img/members/MericelTao.jpg";
-import SamuelImg from "../../assets/img/members/SamuelMeisner.jpg";
-import EmeraldImg from "../../assets/img/members/default.jpg";
-import TravisImg from "../../assets/img/members/TravisZhang.jpg";
-import VarunImg from "../../assets/img/members/default.jpg";
-import LauraImg from "../../assets/img/members/LauraGong.jpg";
-import ImaniImg from "../../assets/img/members/ImaniFinkley.jpg";
-import KatieImg from "../../assets/img/members/KatieZelvin.jpg";
-import EricGuoImg from "../../assets/img/members/EricGuo.jpg";
-import EricChenImg from "../../assets/img/members/default.jpg";
-import VivianImg from "../../assets/img/members/default.jpg";
-import DarrenImg from "../../assets/img/members/DarrenKey.jpg";
-import MahithaImg from "../../assets/img/members/MahithaPenmetsa.jpg";
-import AudreyImg from "../../assets/img/members/AudreyWang.jpg";
-import JasonImg from "../../assets/img/members/JasonZheng.jpg";
-import DenizImg from "../../assets/img/members/DenizBoloni-Turgut.jpg";
-import JakobImg from "../../assets/img/members/JakobSilver.jpg";
-import CadeImg from "../../assets/img/members/CadeJin.jpg";
-import AnyaImg from "../../assets/img/members/AnyaYerramilli.jpg";
-import TheodoreImg from "../../assets/img/members/TheodoreJeliazkov.jpg";
-import TamaraImg from "../../assets/img/members/TamaraKasikovic.jpg";
 import AmrithImg from "../../assets/img/members/AmrithKumaar.jpg";
-import KaylaImg from "../../assets/img/members/KaylaShan.jpg";
-import SrivatsaImg from "../../assets/img/members/SrivatsaKundurthy.jpg";
-import JoyceImg from "../../assets/img/members/default.jpg";
-import TemiImg from "../../assets/img/members/Temi.jpeg";
-import EricDoImg from "../../assets/img/members/EricDo.jpg";
-import MinhImg from "../../assets/img/members/default.jpg";
-import ProfWeinbergerImg from "../../assets/img/members/default.jpg";
+import AnyaImg from "../../assets/img/members/AnyaYerramilli.jpg";
+import AudreyImg from "../../assets/img/members/AudreyWang.jpg";
 import BossImg from "../../assets/img/members/BossLerdamnrongwong.jpg";
+import CadeImg from "../../assets/img/members/CadeJin.jpg";
+import DarrenImg from "../../assets/img/members/DarrenKey.jpg";
+import DenizImg from "../../assets/img/members/DenizBoloni-Turgut.jpg";
+import EricDoImg from "../../assets/img/members/EricDo.jpg";
+import EricGuoImg from "../../assets/img/members/EricGuo.jpg";
+import ImaniImg from "../../assets/img/members/ImaniFinkley.jpg";
+import JakobImg from "../../assets/img/members/JakobSilver.jpg";
+import JasonImg from "../../assets/img/members/JasonZheng.jpg";
 import JerryImg from "../../assets/img/members/JerryWang.jpg";
-import MihirKulshreshtha from "../../assets/img/members/MihirKulshreshtha.jpg";
+import KatieImg from "../../assets/img/members/KatieZelvin.jpg";
+import KaylaImg from "../../assets/img/members/KaylaShan.jpg";
+import LauraImg from "../../assets/img/members/LauraGong.jpg";
+import LeoQian from "../../assets/img/members/LeoQian.jpg";
 import LetitiaSoare from "../../assets/img/members/LetitiaSoare.jpg";
-import LeoQian from "../../assets/img/members/LeoQian.jpg"
-import MichelleZhou from "../../assets/img/members/MichelleZhou.jpg"
-import JeromeHsu from "../../assets/img/members/default.jpg"
+import MahithaImg from "../../assets/img/members/MahithaPenmetsa.jpg";
+import MericelImg from "../../assets/img/members/MericelTao.jpg";
+import MichelleZhou from "../../assets/img/members/MichelleZhou.jpg";
+import MihirKulshreshtha from "../../assets/img/members/MihirKulshreshtha.jpg";
+import SamuelImg from "../../assets/img/members/SamuelMeisner.jpg";
+import SkylerImg from "../../assets/img/members/SkylerShapiro.jpg";
+import SrivatsaImg from "../../assets/img/members/SrivatsaKundurthy.jpg";
+import TamaraImg from "../../assets/img/members/TamaraKasikovic.jpg";
+import TemiImg from "../../assets/img/members/Temi.jpeg";
+import TheodoreImg from "../../assets/img/members/TheodoreJeliazkov.jpg";
+import TravisImg from "../../assets/img/members/TravisZhang.jpg";
+import { default as EmeraldImg, default as EricChenImg, default as JeromeHsu, default as JoyceImg, default as MinhImg, default as ProfWeinbergerImg, default as VarunImg, default as VivianImg } from "../../assets/img/members/default.jpg";
 
 const members = [
   {
     title: "Subteam Lead",
-    name: "Mericel Tao",
+    name: "Deniz Bölöni-Turgut",
     description: "Sample Text",
-    img: MericelImg.src,
-    linkedin: "https://www.linkedin.com/in/mericel-tao/", // LinkedIn URL from the data
+    img: DenizImg.src,
+    linkedin: "https://www.linkedin.com/in/deniz-bt/",
   },
   {
     title: "Subteam Lead",
-    name: "Deniz Boloni-Turgut",
+    name: "Eric Do",
     description: "Sample Text",
-    img: DenizImg.src,
-    linkedin: "https://www.linkedin.com/in/deniz-bt/", // LinkedIn URL from the data
+    img: EricDoImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Mericel Tao",
+    description: "Sample Text",
+    img: MericelImg.src,
+    linkedin: "https://www.linkedin.com/in/mericel-tao/",
   },
   {
     title: "Member",
     name: "Skyler Shapiro",
     description: "Sample Text",
     img: SkylerImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Samuel Meisner",
     description: "Sample Text",
     img: SamuelImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Emerald Liu",
     description: "Sample Text",
     img: EmeraldImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Travis Zhang",
     description: "Sample Text",
     img: TravisImg.src,
-    linkedin: "https://www.linkedin.com/in/travis-zhang/", // LinkedIn URL from the data
+    linkedin: "https://www.linkedin.com/in/travis-zhang/",
   },
   {
     title: "Member",
     name: "Varun Gande",
     description: "Sample Text",
     img: VarunImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Laura Gong",
     description: "Sample Text",
     img: LauraImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
@@ -243,13 +243,6 @@ const members = [
     description: "Sample Text",
     img: TemiImg.src,
     linkedin: 'https://www.linkedin.com/in/temi-adebowale/',
-  },
-  {
-    title: "Member",
-    name: "Eric Do",
-    description: "Sample Text",
-    img: EricDoImg.src,
-    linkedin: 'https://www.linkedin.com/in/eric-do-424331261',
   },
   {
     title: "Member",

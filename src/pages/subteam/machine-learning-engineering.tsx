@@ -1,48 +1,53 @@
-import React from "react";
 import Layout from "@/components/Layout";
+import React from "react";
 
 import Subteam from "@/components/Subteam";
 
-import ArnavImg from "../../assets/img/members/ArnavAgrawal.jpg";
-import EverettImg from "../../assets/img/members/EverettLee.jpg";
-import AndyImg from "../../assets/img/members/AndyHe.jpg";
-import NehaImg from "../../assets/img/members/NehaKulshreshtha.jpg";
-import EdwardImg from "../../assets/img/members/default.jpg";
-import MeiLinImg from "../../assets/img/members/MeiLinHu.jpg";
-import VincentImg from "../../assets/img/members/default.jpg";
-import AndreaImg from "../../assets/img/members/AndreaSiby.jpg";
-import TakumaImg from "../../assets/img/members/TakumaOsaka.jpg";
-import DanWeiImg from "../../assets/img/members/DanWeiZuo.jpg";
 import AliceImg from "../../assets/img/members/AliceUm.jpg";
-import TanishaImg from "../../assets/img/members/default.jpg";
-import KennethImg from "../../assets/img/members/KennethChiem.jpg";
-import YunooImg from "../../assets/img/members/YunooKim.jpg";
-import PeterImg from "../../assets/img/members/PeterFavero.jpg";
-import SamanthaImg from "../../assets/img/members/SamanthaVaca.jpg";
-import TanishImg from "../../assets/img/members/TanishTyagi.jpg";
-import MinhajImg from "../../assets/img/members/MinhajFahad.jpg";
-import ProfDeSaImg from "../../assets/img/members/default.jpg";
-import VishnuImg from "../../assets/img/members/default.jpg";
-import JayImg from "../../assets/img/members/JayTalwar.jpg";
-import AndrewParkImg from "../../assets/img/members/default.jpg";
+import AndreaImg from "../../assets/img/members/AndreaSiby.jpg";
+import AndyImg from "../../assets/img/members/AndyHe.jpg";
+import ArnavImg from "../../assets/img/members/ArnavAgrawal.jpg";
 import ArnavKaulImg from "../../assets/img/members/ArnavKaul.jpg";
-import SrikarImg from "../../assets/img/members/default.jpg";
-import KaitlynImg from "../../assets/img/members/default.jpg";
-import RahiImg from "../../assets/img/members/RahiDasgupta.jpg";
-import SucheerMaddury from "../../assets/img/members/SucheerMaddury.jpg";
+import DanWeiImg from "../../assets/img/members/DanWeiZuo.jpg";
 import EricZhou from "../../assets/img/members/EricZhou.jpg";
-import AdenZhao from "../../assets/img/members/default.jpg";
+import EverettImg from "../../assets/img/members/EverettLee.jpg";
+import JayImg from "../../assets/img/members/JayTalwar.jpg";
+import KennethImg from "../../assets/img/members/KennethChiem.jpg";
+import MeiLinImg from "../../assets/img/members/MeiLinHu.jpg";
+import MinhajImg from "../../assets/img/members/MinhajFahad.jpg";
+import NehaImg from "../../assets/img/members/NehaKulshreshtha.jpg";
+import PeterImg from "../../assets/img/members/PeterFavero.jpg";
+import RahiImg from "../../assets/img/members/RahiDasgupta.jpg";
+import SamanthaImg from "../../assets/img/members/SamanthaVaca.jpg";
+import SucheerMaddury from "../../assets/img/members/SucheerMaddury.jpg";
+import TakumaImg from "../../assets/img/members/TakumaOsaka.jpg";
+import YunooImg from "../../assets/img/members/YunooKim.jpg";
+import { default as AdenZhao, default as AndrewParkImg, default as EdwardImg, default as KaitlynImg, default as ProfDeSaImg, default as SrikarImg, default as TanishaImg, default as VincentImg, default as VishnuImg } from "../../assets/img/members/default.jpg";
 
 const members = [
   {
     title: "Subteam Lead",
-    name: "Everett Lee",
+    name: "Samantha Vaca",
     description: "Sample Text",
-    img: EverettImg.src,
-    linkedin: "https://www.linkedin.com/in/everett-lee-6540b41b3/", // LinkedIn URL from the data
+    img: SamanthaImg.src,
+    linkedin: null,
   },
   {
     title: "Subteam Lead",
+    name: "Minhaj Fahad",
+    description: "Sample Text",
+    img: MinhajImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Everett Lee",
+    description: "Sample Text",
+    img: EverettImg.src,
+    linkedin: "https://www.linkedin.com/in/everett-lee-6540b41b3/",
+  },
+  {
+    title: "Member",
     name: "Yunoo Kim",
     description: "Sample Text",
     img: YunooImg.src,
@@ -53,35 +58,35 @@ const members = [
     name: "Arnav Agrawal",
     description: "Sample Text",
     img: ArnavImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Andy He",
     description: "Sample Text",
     img: AndyImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Neha Kulshreshtha",
     description: "Sample Text",
     img: NehaImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Edward Gu",
     description: "Sample Text",
     img: EdwardImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Mei Lin Hu",
     description: "Sample Text",
     img: MeiLinImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
@@ -138,27 +143,6 @@ const members = [
     description: "Sample Text",
     img: PeterImg.src,
     linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Samantha Vaca",
-    description: "Sample Text",
-    img: SamanthaImg.src,
-    linkedin: "https://www.linkedin.com/in/samantha-vaca", // LinkedIn URL from the data
-  },
-  {
-    title: "Member",
-    name: "Tanish Tyagi",
-    description: "Sample Text",
-    img: TanishImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Minhaj Fahad",
-    description: "Sample Text",
-    img: MinhajImg.src,
-    linkedin: "https://www.linkedin.com/in/minhajfahad/",
   },
   {
     title: "Member",

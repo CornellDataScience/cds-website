@@ -1,49 +1,28 @@
-import React from "react";
 import Layout from "@/components/Layout";
 import Subteam from "@/components/Subteam";
+import React from "react";
 
-import JerryChenImg from "../../assets/img/members/JerryChen.jpg";
-import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
-import TanviKapoorImg from "../../assets/img/members/default.jpg";
-import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
-import JacobMayourianImg from "../../assets/img/members/JacobMayourian.jpg";
-import NoahPlantImg from "../../assets/img/members/NoahPlant.jpg";
-import AlkiviadesBoukasImg from "../../assets/img/members/default.jpg";
-import AdonaAntenehImg from "../../assets/img/members/default.jpg";
-import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
-import AlyssaSerebrenikImg from "../../assets/img/members/default.jpg";
-import AndrewChenImg from "../../assets/img/members/default.jpg";
-import AryaPatelImg from "../../assets/img/members/default.jpg";
-import CodyTorogovnikImg from "../../assets/img/members/default.jpg";
-import JerryWangImg from "../../assets/img/members/JerryWang.jpg";
-import IramLiuImg from "../../assets/img/members/IramLiu.jpg";
-import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
-import PeterHaImg from "../../assets/img/members/PeterHa.jpg";
-import NancyChenImg from "../../assets/img/members/NancyChen.jpg";
-import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
-import PeterZhengImg from "../../assets/img/members/default.jpg";
-import EileenWuImg from "../../assets/img/members/default.jpg";
-import AarshaJoshiImg from "../../assets/img/members/default.jpg";
-import AaravKhannaImg from "../../assets/img/members/default.jpg";
-import JohnsonLinImg from "../../assets/img/members/default.jpg";
-import ProfHaymHirshImg from "../../assets/img/members/default.jpg";
-import KatelynImg from "../../assets/img/members/KatelynFu.jpg";
-import EvanImg from "../../assets/img/members/EvanYang.jpeg";
 import AndrewDaImg from "../../assets/img/members/AndrewDa.jpg";
-import LucasImg from "../../assets/img/members/LucasHe.jpg";
-import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
 import ChenkaiImg from "../../assets/img/members/ChenkaiShen.jpg";
+import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
+import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
+import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
+import EvanImg from "../../assets/img/members/EvanYang.jpeg";
+import IramLiuImg from "../../assets/img/members/IramLiu.jpg";
+import JacobMayourianImg from "../../assets/img/members/JacobMayourian.jpg";
+import JerryChenImg from "../../assets/img/members/JerryChen.jpg";
+import KatelynImg from "../../assets/img/members/KatelynFu.jpg";
+import LucasImg from "../../assets/img/members/LucasHe.jpg";
+import NancyChenImg from "../../assets/img/members/NancyChen.jpg";
+import NoahPlantImg from "../../assets/img/members/NoahPlant.jpg";
+import PeterHaImg from "../../assets/img/members/PeterHa.jpg";
+import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
-import AydanGerber from "../../assets/img/members/default.jpg";
+import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
+import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
+import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as AydanGerber, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg } from "../../assets/img/members/default.jpg";
 
 const members = [
-  {
-    title: "Subteam Lead",
-    name: "Elizabeth Song",
-    description: "Sample Text",
-    img: ElizabethSongImg.src,
-    linkedin: "https://www.linkedin.com/in/elizabethyurisong/", // LinkedIn URL from the data
-  },
   {
     title: "Subteam Lead",
     name: "Peter Ha",
@@ -52,46 +31,60 @@ const members = [
     linkedin: null,
   },
   {
+    title: "Subteam Lead",
+    name: "Lucas He",
+    description: "Sample Text",
+    img: LucasImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Elizabeth Song",
+    description: "Sample Text",
+    img: ElizabethSongImg.src,
+    linkedin: "https://www.linkedin.com/in/elizabethyurisong/",
+  },
+  {
     title: "Member",
     name: "Tanvi Kapoor",
     description: "Sample Text",
     img: TanviKapoorImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Jerry Chen",
     description: "Sample Text",
     img: JerryChenImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Rohan Shah",
     description: "Sample Text",
     img: RohanShahImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Jacob Mayourian",
     description: "Sample Text",
     img: JacobMayourianImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Noah Plant",
     description: "Sample Text",
     img: NoahPlantImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
     name: "Alkiviades Boukas",
     description: "Sample Text",
     img: AlkiviadesBoukasImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
+    linkedin: null,
   },
   {
     title: "Member",
@@ -155,13 +148,6 @@ const members = [
     description: "Sample Text",
     img: AndrewDaImg.src,
     linkedin: "https://www.linkedin.com/in/andrew-da/",
-  },
-  {
-    title: "Member",
-    name: "Lucas He",
-    description: "Sample Text",
-    img: LucasImg.src,
-    linkedin: "https://www.linkedin.com/in/lucashe309/",
   },
   {
     title: "Member",
