@@ -125,7 +125,7 @@ const Recruitment: React.FC = () => {
                     .
                   </li>
                   <li>
-                    Freshmen candidates application will open very soon, please stay tuned!
+                    Freshmen candidates application will open in around two weeks, please stay tuned!
                   </li>
                   {/* <li>
                     Interested candidates should begin by completing the{" "}
