@@ -1,5 +1,5 @@
-import React from "react";
 import Layout from "@/components/Layout";
+import React from "react";
 
 import "../assets/css/sponsorship.css";
 import team from "../assets/img/team3.jpg";
@@ -57,8 +57,8 @@ const Sponsorship: React.FC = () => {
               allow="autoplay"
             ></iframe>
             <a
-              href="https://drive.google.com/uc?export=download&id=1Osw0XNsTBda7p03qceMSErBJ0om9ofWV"
-              download="sponsorship-packet-fa24.pdf"
+              href="https://drive.google.com/file/d/1j9RyKdc4UxxCxqhMqMIjw6-UeMcRI-VX"
+              download="sponsorship-packet-fa25.pdf"
               className="mt-5 inline-block border border-black bg-transparent text-black py-2 px-4"
             >
               Download Sponsorship Packet
