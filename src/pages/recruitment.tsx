@@ -1,5 +1,5 @@
-import React from "react";
 import Layout from "@/components/Layout";
+import React from "react";
 
 import "../assets/css/recruitment.css";
 import img from "../assets/img/team2.png";
@@ -103,26 +103,29 @@ const Recruitment: React.FC = () => {
               <h1 className="text-4xl font-normal mb-4">Application</h1>
               <div className="text-light text-lg text-md">
                 This semester, Cornell Data Science is opening recruitment for
-                various subteams, with specific eligibility criteria.{" "}
-                <strong className="text-bold underline">
+                all subteams!{" "}
+                {/* <strong className="text-bold underline">
                   Our Data Science (DS) and Quantitative Finance (QF) subteams are{" "}
                   exclusively recruiting freshmen and sophomore transfers, while Machine
                   Learning Engineering (MLE) is open to both freshmen and upperclassmen.{" "}
                   Our Data Engineering (DE) subteam is not recruiting this semester.
-                </strong>
+                </strong> */}
 
                 <ul className="list-disc pl-5">
                   <li>
-                    Interested candidates should complete the{" "}
+                    Upperclassmen candidates should complete the{" "}
                     <a
                       className="text-blue-700 font-extrabold text-2xl"
-                      href="https://forms.gle/qNEifvefq5EWWdrD9"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfRZNsWirgG9GY3yNQn05llHIyNTv5UMs7xD5m9EBrCW4ZSag/viewform"
                       target="_blank"
                       style={{ textDecoration: "underline", }}
                     >
                       Application form
                     </a>
                     .
+                  </li>
+                  <li>
+                    Freshmen candidates application will open very soon, please stay tuned!
                   </li>
                   {/* <li>
                     Interested candidates should begin by completing the{" "}
@@ -171,20 +174,13 @@ const Recruitment: React.FC = () => {
                     <strong className="text-bold text-xl">
                       Thursday, October 17th at 11:59 PM.{" "}
                     </strong>
-                  </li>
-                  <li>
-                    The <strong className="text-bold">upperclassmen</strong>{" "}
-                    application deadline is{" "}
-                    <strong className="text-bold text-xl">
-                      Thursday, September 5th at 11:59 PM.{" "}
-                    </strong>
                   </li> */}
                   <li>
                     <strong className="text-bold text-xl">
-                      Thursday, January 30th, 2025 at 11:59 PM EST
+                      Thursday, September 4th, 2025 at 11:59 PM EST
                     </strong><strong className="text-bold"> - Written Applications Due</strong>
                   </li>
-                  <li>
+                  {/* <li>
                     <strong className="text-bold text-xl">
                       Wednesday, February 5th, 2025 at 11:59 PM EST
                     </strong><strong className="text-bold"> - Application Decisions Released</strong>
@@ -193,7 +189,7 @@ const Recruitment: React.FC = () => {
                     <strong className="text-bold text-xl">
                       Wednesday, February 12th, 2025 at 11:59 PM EST
                     </strong><strong className="text-bold"> - Interview Decisions Released</strong>
-                  </li>
+                  </li> */}
                   {/*<li>Check back later!</li>*/}
                 </ul>
               </div>
@@ -237,7 +233,7 @@ const Recruitment: React.FC = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </Layout >
     </>
   );
 };
