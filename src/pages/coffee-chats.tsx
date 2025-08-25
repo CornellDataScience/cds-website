@@ -1,5 +1,5 @@
-import React from "react";
 import Layout from "@/components/Layout";
+import React from "react";
 import "../assets/css/coffeechat.css";
 import gates from "../assets/img/gates.jpg";
 
@@ -38,7 +38,7 @@ const CoffeeChat: React.FC = () => {
             <h1 className="text-5xl">CDS Coffee-Chat Signups</h1>
             <iframe
               className="w-full h-[50rem] mt-5 border border-black"
-              src="https://docs.google.com/spreadsheets/d/1DNg2zXAQTmofeIXuzl_L1rwi8plcY46ebBLxq2D3_6g/pubhtml?widget=true&amp;headers=false"
+              src="https://docs.google.com/spreadsheets/d/1bOfRHpqzPIq9Q1Psg66sYLNmJW85OZxsNcw9JRKwBwI/edit?gid=0#gid=0"
             ></iframe>
           </div>
         </div>
