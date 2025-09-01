@@ -52,7 +52,7 @@ const Sponsorship: React.FC = () => {
           <div>
             <h1 className="text-5xl">Sponsorship Packet</h1>
             <iframe
-              src="https://drive.google.com/file/d/1Osw0XNsTBda7p03qceMSErBJ0om9ofWV/preview"
+              src="https://drive.google.com/file/d/1j9RyKdc4UxxCxqhMqMIjw6-UeMcRI-VX/preview"
               className="w-full h-[800px] mt-10"
               allow="autoplay"
             ></iframe>
