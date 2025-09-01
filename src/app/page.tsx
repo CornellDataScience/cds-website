@@ -348,66 +348,6 @@ export default function Home() {
                 className="mt-5 h-32 sm:h-48 w-32 sm:w-48 hover:scale-110 transition-transform duration-500"
               />
             </div>
-            <div className="flex flex-col sm:flex-row gap-8">
-              <div className="card bg-glass hover-lift relative border border-white/20 m-2 p-6 sm:p-8 rounded-2xl w-full sm:w-[32rem] h-96 sm:h-[32rem] group">
-                <div className="text-2xl sm:text-5xl font-bold text-white text-left mb-6">
-                  People
-                </div>
-                <div className="text-lg sm:text-xl text-gray-200 group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-6 p-6 sm:p-8 leading-relaxed">
-                  Our members are the heart of our team. Ranging from freshmen
-                  to graduate students, they represent five different colleges
-                  and a multitude of majors. Come meet all 92 of us and discover
-                  the diverse talents that drive our success!
-                </div>
-                <div className="cursor-pointer absolute top-6 right-6 mt-2 mr-2 flex items-center justify-center transition-all duration-400 w-12 sm:w-16 h-12 sm:h-16 bg-white/10 backdrop-blur-sm border border-white/30 group-hover:border-white group-hover:bg-white/20 rounded-full group-hover:scale-110">
-                  <Link href="/subteams">
-                    <svg
-                      className="w-6 sm:w-8 h-6 sm:h-8 text-white transition-transform duration-400 group-hover:translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      ></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-              <div className="card bg-glass hover-lift relative border border-white/20 m-2 p-6 sm:p-8 rounded-2xl w-full sm:w-[32rem] h-96 sm:h-[32rem] group">
-                <div className="text-2xl sm:text-5xl font-bold text-white text-left mb-6">
-                  Education
-                </div>
-                <div className="text-lg sm:text-xl text-gray-200 group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-6 p-6 sm:p-8 leading-relaxed">
-                  Education is a cornerstone of our mission. Our commitment
-                  extends to educating both our members and the broader Cornell
-                  community, underscoring the importance we place on knowledge
-                  sharing and community engagement.
-                </div>
-                <div className="cursor-pointer absolute top-6 right-6 mt-2 mr-2 flex items-center justify-center transition-all duration-400 w-12 sm:w-16 h-12 sm:h-16 bg-white/10 backdrop-blur-sm border border-white/30 group-hover:border-white group-hover:bg-white/20 rounded-full group-hover:scale-110">
-                  <Link href="/education">
-                    <svg
-                      className="w-6 sm:w-8 h-6 sm:h-8 text-white transition-transform duration-400 group-hover:translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      ></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </main>
