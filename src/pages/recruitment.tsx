@@ -192,6 +192,15 @@ const Recruitment: React.FC = () => {
                   </li> */}
                   {/*<li>Check back later!</li>*/}
                 </ul>
+                <h1 className="text-3xl">Application Deadlines (Freshmen/Transfers)</h1>
+                <ul className="list-disc pl-5 text-lg">
+                  <li>
+                    <strong className="text-bold text-xl">
+                      Thursday, October 16th, 2025 at 11:59 PM EST
+                    </strong><strong className="text-bold"> - Written Applications Due</strong>
+                  </li>
+                </ul>
+
               </div>
             </div>
           </div>
