@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import logo from "../assets/img/logo.png";
 import imdbImg from "../assets/img/imdb.png";
+import logo from "../assets/img/logo.png";
 import vibesyncImg from "../assets/img/vibesync.png";
 // import Loader from './Loader';
 
@@ -360,7 +360,7 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                         height={40}
                       />
                     </Link>
-                    <p className="text-sm text-gray-100 group-hover:text-gray-400 transition-colors duration-300">
+                    <p className="text-sm text-gray-100 group-hover:text-gray-400 transition-colors duration-300 leading-relaxed">
                       {project.description}
                     </p>
                   </div>
@@ -384,16 +384,11 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                       Blog
                     </Link>
                   </div>
-                  <div className="hover:text-gray-400 transition-colors duration-300">
-                    <Link href="/recruitment">Recruitment</Link>
+                  <div className="hover:text-green-300 transition-all duration-300 hover:translate-x-2 block group">
+                    <Link href="/recruitment" className="group-hover:text-green-400 transition-colors duration-300">Recruitment</Link>
                   </div>
-                  <div className="hover:text-gray-400 transition-colors duration-300">
-                    <Link href="/information-sessions">
-                      Information Sessions
-                    </Link>
-                  </div>
-                  <div className="hover:text-gray-400 transition-colors duration-300">
-                    <Link href="/coffee-chats">Coffee Chats</Link>
+                  <div className="hover:text-green-300 transition-all duration-300 hover:translate-x-2 block group">
+                    <Link href="/coffee-chats" className="group-hover:text-green-400 transition-colors duration-300">Coffee Chats</Link>
                   </div>
                   <div className="hover:text-gray-400 transition-colors duration-300">
                     <Link href="/sponsorship">Sponsorship</Link>
@@ -416,21 +411,21 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
 
       {/* SearchView start */}
       <div
-        className={`fixed inset-0 bg-[#1e2124] z-40 ${isSearchView ? "translate-y-0" : "translate-y-full"
+        className={`fixed inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 z-40 transition-transform duration-700 ease-in-out ${isSearchView ? "translate-y-0" : "translate-y-full"
           }`}
       >
         <div
           style={{
             transform: isTyping ? "translateY(10rem)" : "translateY(27rem)",
           }}
-          className={`flex w-full flex-col justify-center items-center transition-transform duration-300 transform`}
+          className={`flex w-full flex-col justify-center items-center transition-transform duration-500 transform`}
         >
           <div className="md:w-3/4 w-full p-8 md:p-0 ml-0 md:ml-24">
             <div className="relative flex items-center justify-center md:justify-start">
               <input
                 type="text"
-                placeholder="Start typing to search"
-                className="w-full p-2 pl-1 text-3xl md:text-5xl bg-transparent text-white focus:outline-none border-b border-white"
+                placeholder="Start typing to search..."
+                className="w-full p-4 pl-1 text-3xl md:text-6xl bg-transparent text-white focus:outline-none border-b-2 border-purple-400 focus:border-pink-400 placeholder-gray-300 transition-all duration-300"
                 value={inputValue}
                 onChange={handleInputChange}
                 ref={inputRef}
@@ -438,12 +433,11 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
               {inputValue && (
                 <button
                   onClick={clearInput}
-                  className="absolute right-0 top-5 md:top-0 mt-0 md:mt-9 mr-2 md:mr-4 text-gray-200 text-xs md:text-lg flex items-center"
+                  className="absolute right-0 top-5 md:top-0 mt-0 md:mt-9 mr-2 md:mr-4 text-purple-300 hover:text-pink-400 text-xs md:text-lg flex items-center transition-all duration-300 group"
                 >
-                  {/* x icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 md:h-5 md:w-5 text-white mr-1 md:mt-0 m-1/2"
+                    className="h-5 w-5 md:h-6 md:w-6 text-white mr-2 md:mt-0 m-1/2 group-hover:rotate-90 transition-transform duration-300"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -453,46 +447,40 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Clear
+                  <span className="font-medium">Clear</span>
                 </button>
               )}
             </div>
-            <div className="mt-4 text-white text-xs md:text-lg">
-              <span className="block md:inline-block mr-4 text-xs md:text-base text-gray-400 whitespace-nowrap">
+            <div className="mt-8 text-white text-xs md:text-lg">
+              <span className="block md:inline-block mr-4 text-xs md:text-base text-purple-300 whitespace-nowrap font-semibold tracking-wider">
                 FREQUENTLY SEARCHED FOR
               </span>
-              <span className={`mr-4 ${fadeInClasses[0]}`}>
-                <Link
-                  href="/recruitment"
-                  className="underline hover:text-gray-400 transition-colors duration-300"
-                >
-                  Recruitment
-                </Link>
-              </span>
-              <span className={`mr-4 ${fadeInClasses[1]}`}>
-                <Link
-                  href=""
-                  className="underline hover:text-gray-400 transition-colors duration-300"
-                >
-                  Info Sessions
-                </Link>
-              </span>
-              <span className={`mr-4 ${fadeInClasses[2]}`}>
-                <Link
-                  href=""
-                  className="underline hover:text-gray-400 transition-colors duration-300"
-                >
-                  Coffee Chats
-                </Link>
-              </span>
-              <span className={`mr-4 ${fadeInClasses[3]}`}>
-                <Link
-                  href=""
-                  className="underline hover:text-gray-400 transition-colors duration-300"
-                >
-                  E-Board
-                </Link>
-              </span>
+              <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
+                <span className={`mr-4 ${fadeInClasses[0]} group`}>
+                  <Link
+                    href="/recruitment"
+                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                  >
+                    Recruitment
+                  </Link>
+                </span>
+                <span className={`mr-4 ${fadeInClasses[1]} group`}>
+                  <Link
+                    href="/coffee-chats"
+                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                  >
+                    Coffee Chats
+                  </Link>
+                </span>
+                <span className={`mr-4 ${fadeInClasses[2]} group`}>
+                  <Link
+                    href="/eboard"
+                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                  >
+                    E-Board
+                  </Link>
+                </span>
+              </div>
             </div>
           </div>
         </div>

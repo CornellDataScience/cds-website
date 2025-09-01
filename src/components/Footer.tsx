@@ -1,12 +1,11 @@
-import React from "react";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagram,
   faGithub,
-  // faFacebook,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import React from "react";
 
 interface FooterProps {
   // Define your component props here
@@ -115,13 +114,6 @@ const Footer: React.FC<FooterProps> = (props) => {
             className="hover:text-gray-300"
           >
             Recruitment
-          </Link>
-          <Link
-            target="_blank"
-            href="/information-sessions"
-            className="hover:text-gray-300"
-          >
-            Information Sessions
           </Link>
           <Link
             target="_blank"

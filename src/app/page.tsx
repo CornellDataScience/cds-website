@@ -1,40 +1,40 @@
 "use client";
 
 // dependencies
-import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 // logo
 import whiteLogo from "../assets/img/logo.png";
 import coloredLogo from "../assets/img/logo_colored.png";
 
 // components
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 // images
-import team1 from "../assets/img/team1.jpg";
 import lec from "../assets/img/lec.jpg";
 import lec2 from "../assets/img/lec2.jpg";
+import team1 from "../assets/img/team1.jpg";
 
 // sponsors
-import verizon from "../assets/img/sponsors/verizon.png";
-import boeing from "../assets/img/sponsors/boeing.png";
-import google from "../assets/img/sponsors/google.png";
-import meta from "../assets/img/sponsors/meta.svg";
 import blackrock from "../assets/img/sponsors/blackrock.png";
+import boeing from "../assets/img/sponsors/boeing.png";
 import carnival from "../assets/img/sponsors/carnival.png";
 import dataiku from "../assets/img/sponsors/dataiku.png";
+import google from "../assets/img/sponsors/google.png";
 import ibm from "../assets/img/sponsors/ibm.png";
+import meta from "../assets/img/sponsors/meta.svg";
 import microsoft from "../assets/img/sponsors/microsoft.png";
 import millennium from "../assets/img/sponsors/millennium.png";
-import pfizer from "../assets/img/sponsors/pfizer.png";
 import munich from "../assets/img/sponsors/munich.png";
-import wayfair from "../assets/img/sponsors/wayfair.png";
+import pfizer from "../assets/img/sponsors/pfizer.png";
 import pg from "../assets/img/sponsors/pg.png";
+import verizon from "../assets/img/sponsors/verizon.png";
+import wayfair from "../assets/img/sponsors/wayfair.png";
 
 import "../assets/css/page.css";
 
@@ -190,28 +190,32 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-full flex flex-col p-6 sm:p-24 bg-grey">
-          <div>
+        <section className="w-full flex flex-col p-6 sm:p-24 bg-gradient-to-br from-gray-50 to-white">
+          <div className="mb-8">
+            <h2 className="text-center text-4xl sm:text-6xl font-bold text-gradient mb-4">Our Partners</h2>
+            <p className="text-center text-xl text-gray-600 max-w-2xl mx-auto">Proud to collaborate with industry leaders who support our mission</p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-soft p-8">
             <Slider {...settings}>
               {sponsors.map((image, index) => (
                 <div key={index} className="carousel-item">
-                  <img src={image} alt={`Slide ${index + 1}`} />
+                  <img src={image} alt={`Sponsor ${index + 1}`} className="hover-lift" />
                 </div>
               ))}
             </Slider>
           </div>
         </section>
 
-        <section className="w-full flex flex-col p-6 sm:p-24 bg-[#efefef]">
+        <section className="w-full flex flex-col p-6 sm:p-24 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-12 sm:mt-24">
-            <div className="relative w-full sm:w-1/2">
-              <div className="text-3xl sm:text-7xl before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:border-t before:border-black">
+            <div className="relative w-full sm:w-1/2 animate-fade-in-up">
+              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-purple-600 before:to-blue-600 before:rounded-full">
                 Empowering Data <br />
                 Driven Innovation
               </div>
             </div>
-            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0">
-              <div className="text-xl sm:text-3xl font-light">
+            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-slide-in-right">
+              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
                 Cornell Data Science (CDS) is an undergraduate project team
                 which builds data-driven solutions to a variety of real-world
                 problems. Our team of 92 students is a great place to meet
@@ -219,114 +223,146 @@ export default function Home() {
                 intersection of theory and application, and contribute to the
                 greater community initiatives.
               </div>
-              <img
-                src={team1.src}
-                alt="Team"
-                className="w-full h-56 sm:h-96 mt-4 sm:mt-16 object-cover"
-              />
+              <div className="relative overflow-hidden rounded-2xl shadow-xl mt-8 sm:mt-16 group">
+                <img
+                  src={team1.src}
+                  alt="Team"
+                  className="w-full h-56 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-12 sm:mt-48">
-            <div className="relative w-full sm:w-1/2">
-              <div className="text-3xl sm:text-7xl before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:border-t before:border-black">
+          <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
+            <div className="relative w-full sm:w-1/2 animate-slide-in-left">
+              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-green-500 before:to-blue-600 before:rounded-full">
                 Driving Data Science Excellence
               </div>
             </div>
-            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0">
-              <div className="text-xl sm:text-3xl font-light">
+            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
+              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
                 We work on projects that span the spectrum of data science. From
                 applied deep learning to user-friendly visualizations, there is
                 likely someone on CDS working on it.
               </div>
-              <img
-                src={lec.src}
-                alt="Lecture"
-                className="w-full h-56 sm:h-96 mt-4 sm:mt-16 object-cover"
-              />
+              <div className="relative overflow-hidden rounded-2xl shadow-xl mt-8 sm:mt-16 group">
+                <img
+                  src={lec.src}
+                  alt="Lecture"
+                  className="w-full h-56 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-12 sm:mt-48">
-            <div className="relative w-full sm:w-1/2">
-              <div className="text-3xl sm:text-7xl before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:border-t before:border-black">
+          <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
+            <div className="relative w-full sm:w-1/2 animate-slide-in-right">
+              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-pink-500 before:to-purple-600 before:rounded-full">
                 Showcasing <br />
                 Data Science Impact
               </div>
             </div>
-            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0">
-              <div className="text-xl sm:text-3xl font-light">
+            <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
+              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
                 We connect industry and passionate students together through our
                 focus on data science. Come to our networking events, company
                 talks, and mentoring sessions to learn more about careers in
                 data science.
               </div>
-              <img
-                src={lec2.src}
-                alt="Lecture"
-                className="w-full h-56 sm:h-96 mt-4 sm:mt-16 object-cover"
-              />
+              <div className="relative overflow-hidden rounded-2xl shadow-xl mt-8 sm:mt-16 group">
+                <img
+                  src={lec2.src}
+                  alt="Lecture"
+                  className="w-full h-56 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             </div>
           </div>
         </section>
-        <section className="w-full flex flex-col p-6 sm:p-24 pt-12 sm:pt-24 bg-[#1e1f2b] text-[#454256]">
-          <div className="flex flex-col sm:flex-row w-full space-x-0 sm:space-x-12 h-full">
-            <div className="w-full sm:w-1/3">
-              <div className="text-3xl sm:text-5xl font-light text-white">
+        <section className="w-full flex flex-col p-6 sm:p-24 pt-12 sm:pt-24 bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row w-full space-x-0 sm:space-x-12 h-full relative z-10">
+            <div className="w-full sm:w-1/3 animate-fade-in-up">
+              <div className="text-4xl sm:text-6xl font-bold text-white mb-8">
                 Driving innovation and excellence through specialized subteams.
               </div>
               <div className="mt-10 mb-12 sm:mb-10">
                 <Link href="/subteams">
-                  <button className="border border-white text-white py-2 px-8 text-lg sm:text-xl hover:bg-white hover:text-[#1e1f2b] transition-colors duration-300">
+                  <button className="btn-primary text-xl px-12 py-4 hover:shadow-glow animate-pulse-glow">
                     Learn More
                   </button>
                 </Link>
               </div>
             </div>
-            <ul className="list-none text-xl lg:text-5xl sm:text-3xl font-light flex-1 w-full max-w-7xl mx-auto">
-              <li className="border-b border-t border-[#454256] py-5 sm:py-10 pl-7 sm:pl-14 hover:text-white hover:pl-20 transition-all duration-300">
-                <Link href="/subteam/machine-learning-engineering">
-                  MACHINE LEARNING ENGINEERING
+            <ul className="list-none text-xl lg:text-5xl sm:text-3xl font-light flex-1 w-full max-w-7xl mx-auto animate-slide-in-right">
+              <li className="border-b border-t border-white/20 py-6 sm:py-12 pl-8 sm:pl-16 hover:text-purple-300 hover:pl-24 hover:bg-white/5 transition-all duration-500 rounded-lg group">
+                <Link href="/subteam/machine-learning-engineering" className="flex items-center">
+                  <span className="group-hover:scale-105 transition-transform duration-300">MACHINE LEARNING ENGINEERING</span>
+                  <svg className="ml-4 w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </Link>
               </li>
-              <li className="border-b border-[#454256] py-5 sm:py-10 pl-7 sm:pl-14 hover:text-white hover:pl-20 transition-all duration-300">
-                <Link href="/subteam/data-engineering">DATA ENGINEERING</Link>
-              </li>
-              <li className="border-b border-[#454256] py-5 sm:py-10 pl-7 sm:pl-14 hover:text-white hover:pl-20 transition-all duration-300">
-                <Link href="/subteam/quantitative-finance">
-                  QUANTITATIVE FINANCE
+              <li className="border-b border-white/20 py-6 sm:py-12 pl-8 sm:pl-16 hover:text-blue-300 hover:pl-24 hover:bg-white/5 transition-all duration-500 rounded-lg group">
+                <Link href="/subteam/data-engineering" className="flex items-center">
+                  <span className="group-hover:scale-105 transition-transform duration-300">DATA ENGINEERING</span>
+                  <svg className="ml-4 w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </Link>
               </li>
-              <li className="border-b border-[#454256] py-5 sm:py-10 pl-7 sm:pl-14 hover:text-white hover:pl-20 transition-all duration-300">
-                <Link href="/subteam/data-science">DATA SCIENCE</Link>
+              <li className="border-b border-white/20 py-6 sm:py-12 pl-8 sm:pl-16 hover:text-green-300 hover:pl-24 hover:bg-white/5 transition-all duration-500 rounded-lg group">
+                <Link href="/subteam/quantitative-finance" className="flex items-center">
+                  <span className="group-hover:scale-105 transition-transform duration-300">QUANTITATIVE FINANCE</span>
+                  <svg className="ml-4 w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+              </li>
+              <li className="border-b border-white/20 py-6 sm:py-12 pl-8 sm:pl-16 hover:text-yellow-300 hover:pl-24 hover:bg-white/5 transition-all duration-500 rounded-lg group">
+                <Link href="/subteam/data-science" className="flex items-center">
+                  <span className="group-hover:scale-105 transition-transform duration-300">DATA SCIENCE</span>
+                  <svg className="ml-4 w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div className="flex-col items-center mt-10 sm:mt-20 justify-center sm:flex h-screen">
-            <div className="text-3xl sm:text-7xl font-light text-white text-center mb-4">
+          <div className="flex-col items-center mt-20 sm:mt-32 justify-center sm:flex h-screen relative z-10">
+            <div className="text-4xl sm:text-7xl font-bold text-white text-center mb-8 animate-fade-in-up">
               Connect and Learn
             </div>
-            <div className="flex justify-center items-center mt-5 mb-5">
+            <div className="flex justify-center items-center mt-8 mb-8 animate-pulse-glow">
               <img
                 src={coloredLogo.src}
                 alt="CDS Logo"
-                className="mt-5 h-24 sm:h-36 w-24 sm:w-36"
+                className="mt-5 h-32 sm:h-48 w-32 sm:w-48 hover:scale-110 transition-transform duration-500"
               />
             </div>
-            <div className="flex flex-col sm:flex-row">
-              <div className="relative border border-[#454256] hover:border-white transition-colors duration-400 m-2 p-4 sm:p-7 rounded-md w-full sm:w-[30rem] h-80 sm:h-[27rem] group">
-                <div className="text-xl sm:text-4xl font-light text-white text-left self-start mb-4">
+            <div className="flex flex-col sm:flex-row gap-8">
+              <div className="card bg-glass hover-lift relative border border-white/20 m-2 p-6 sm:p-8 rounded-2xl w-full sm:w-[32rem] h-96 sm:h-[32rem] group">
+                <div className="text-2xl sm:text-5xl font-bold text-white text-left mb-6">
                   People
                 </div>
-                <div className="text-lg sm:text-lg text-[#454256] group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-4 p-4 sm:p-7">
+                <div className="text-lg sm:text-xl text-gray-200 group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-6 p-6 sm:p-8 leading-relaxed">
                   Our members are the heart of our team. Ranging from freshmen
                   to graduate students, they represent five different colleges
                   and a multitude of majors. Come meet all 92 of us and discover
                   the diverse talents that drive our success!
                 </div>
-                <div className="cursor-pointer absolute top-4 right-3 mt-2 mr-2 flex items-center justify-center transition-colors duration-400 w-10 sm:w-12 h-10 sm:h-12 bg-transparent border border-[#454256] group-hover:border-white rounded-full">
+                <div className="cursor-pointer absolute top-6 right-6 mt-2 mr-2 flex items-center justify-center transition-all duration-400 w-12 sm:w-16 h-12 sm:h-16 bg-white/10 backdrop-blur-sm border border-white/30 group-hover:border-white group-hover:bg-white/20 rounded-full group-hover:scale-110">
                   <Link href="/subteams">
                     <svg
-                      className="w-5 sm:w-6 h-5 sm:h-6 text-[#454256] group-hover:text-white transition-colors duration-400"
+                      className="w-6 sm:w-8 h-6 sm:h-8 text-white transition-transform duration-400 group-hover:translate-x-1"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -342,20 +378,20 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="relative border border-[#454256] hover:border-white transition-colors duration-400 m-2 p-4 sm:p-7 rounded-md w-full sm:w-[30rem] h-80 sm:h-[27rem] group">
-                <div className="text-xl sm:text-4xl font-light text-white text-left self-start mb-4">
+              <div className="card bg-glass hover-lift relative border border-white/20 m-2 p-6 sm:p-8 rounded-2xl w-full sm:w-[32rem] h-96 sm:h-[32rem] group">
+                <div className="text-2xl sm:text-5xl font-bold text-white text-left mb-6">
                   Education
                 </div>
-                <div className="text-lg sm:text-lg text-[#454256] group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-4 p-4 sm:p-7">
+                <div className="text-lg sm:text-xl text-gray-200 group-hover:text-white transition-colors duration-400 absolute bottom-0 left-0 mb-6 p-6 sm:p-8 leading-relaxed">
                   Education is a cornerstone of our mission. Our commitment
                   extends to educating both our members and the broader Cornell
                   community, underscoring the importance we place on knowledge
                   sharing and community engagement.
                 </div>
-                <div className="cursor-pointer absolute top-4 right-3 mt-2 mr-2 flex items-center justify-center transition-colors duration-400 w-10 sm:w-12 h-10 sm:h-12 bg-transparent border border-[#454256] group-hover:border-white rounded-full">
+                <div className="cursor-pointer absolute top-6 right-6 mt-2 mr-2 flex items-center justify-center transition-all duration-400 w-12 sm:w-16 h-12 sm:h-16 bg-white/10 backdrop-blur-sm border border-white/30 group-hover:border-white group-hover:bg-white/20 rounded-full group-hover:scale-110">
                   <Link href="/education">
                     <svg
-                      className="w-5 sm:w-6 h-5 sm:h-6 text-[#454256] group-hover:text-white transition-colors duration-400"
+                      className="w-6 sm:w-8 h-6 sm:h-8 text-white transition-transform duration-400 group-hover:translate-x-1"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

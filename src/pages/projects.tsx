@@ -1,17 +1,17 @@
-import React from "react";
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import { FaGithub, FaFileAlt } from "react-icons/fa";
+import React from "react";
+import { FaFileAlt, FaGithub } from "react-icons/fa";
 
 import "../assets/css/projects.css";
 
-import vibeSyncImg from "../assets/img/vibesync.png";
-import imdbImg from "../assets/img/imdb.png";
-import pocketmlImg from "../assets/img/pocketml.png";
 import caddieaiImg from "../assets/img/caddieai.png";
-import trivaiImg from "../assets/img/trivai.png";
+import imdbImg from "../assets/img/imdb.png";
 import millenniumImg from "../assets/img/millennium.png";
+import pocketmlImg from "../assets/img/pocketml.png";
 import img from "../assets/img/projects.jpg";
+import trivaiImg from "../assets/img/trivai.png";
+import vibeSyncImg from "../assets/img/vibesync.png";
 
 const projects = [
   {
@@ -285,7 +285,7 @@ const About: React.FC = () => {
                           )}
                         </div>
                         <div>
-                          <h2 className="text-md mt-4 font-light">
+                          <h2 className="text-sm mt-4 font-light">
                             {project.description}
                           </h2>
                           <div className="flex flex-wrap gap-2 mt-2">
