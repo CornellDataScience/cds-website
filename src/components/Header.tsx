@@ -411,7 +411,7 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
 
       {/* SearchView start */}
       <div
-        className={`fixed inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 z-40 transition-transform duration-700 ease-in-out ${isSearchView ? "translate-y-0" : "translate-y-full"
+        className={`fixed inset-0 bg-white z-40 transition-transform duration-700 ease-in-out ${isSearchView ? "translate-y-0" : "translate-y-full"
           }`}
       >
         <div
@@ -425,7 +425,7 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
               <input
                 type="text"
                 placeholder="Start typing to search..."
-                className="w-full p-4 pl-1 text-3xl md:text-6xl bg-transparent text-white focus:outline-none border-b-2 border-purple-400 focus:border-pink-400 placeholder-gray-300 transition-all duration-300"
+                className="w-full p-4 pl-1 text-3xl md:text-6xl bg-transparent text-gray-800 focus:outline-none border-b-2 border-gray-400 focus:border-gray-600 placeholder-gray-400 transition-all duration-300"
                 value={inputValue}
                 onChange={handleInputChange}
                 ref={inputRef}
@@ -433,11 +433,11 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
               {inputValue && (
                 <button
                   onClick={clearInput}
-                  className="absolute right-0 top-5 md:top-0 mt-0 md:mt-9 mr-2 md:mr-4 text-purple-300 hover:text-pink-400 text-xs md:text-lg flex items-center transition-all duration-300 group"
+                  className="absolute right-0 top-5 md:top-0 mt-0 md:mt-9 mr-2 md:mr-4 text-gray-500 hover:text-gray-700 text-xs md:text-lg flex items-center transition-all duration-300 group"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 md:h-6 md:w-6 text-white mr-2 md:mt-0 m-1/2 group-hover:rotate-90 transition-transform duration-300"
+                    className="h-5 w-5 md:h-6 md:w-6 text-gray-600 mr-2 md:mt-0 m-1/2 group-hover:rotate-90 transition-transform duration-300"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -451,15 +451,15 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                 </button>
               )}
             </div>
-            <div className="mt-8 text-white text-xs md:text-lg">
-              <span className="block md:inline-block mr-4 text-xs md:text-base text-purple-300 whitespace-nowrap font-semibold tracking-wider">
+            <div className="mt-8 text-gray-800 text-xs md:text-lg">
+              <span className="block md:inline-block mr-4 text-xs md:text-base text-gray-500 whitespace-nowrap font-semibold tracking-wider">
                 FREQUENTLY SEARCHED FOR
               </span>
               <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
                 <span className={`mr-4 ${fadeInClasses[0]} group`}>
                   <Link
                     href="/recruitment"
-                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
                   >
                     Recruitment
                   </Link>
@@ -467,7 +467,7 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                 <span className={`mr-4 ${fadeInClasses[1]} group`}>
                   <Link
                     href="/coffee-chats"
-                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
                   >
                     Coffee Chats
                   </Link>
@@ -475,7 +475,7 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                 <span className={`mr-4 ${fadeInClasses[2]} group`}>
                   <Link
                     href="/eboard"
-                    className="underline hover:text-purple-300 transition-all duration-300 text-lg hover:scale-105 inline-block bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20"
+                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
                   >
                     E-Board
                   </Link>

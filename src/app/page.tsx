@@ -129,7 +129,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="relative w-full min-h-screen flex flex-col justify-end bg-cover bg-center">
+      <main className="relative w-full min-h-screen flex flex-col justify-end bg-white">
         <title>Home | Cornell Data Science</title>
         <div className="">
           <Header isHome={isHome} />
@@ -190,12 +190,12 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-full flex flex-col p-6 sm:p-24" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
+        <section className="w-full flex flex-col p-6 sm:p-24 bg-white">
           <div className="mb-8">
-            <h2 className="text-center text-4xl sm:text-6xl font-light text-white mb-4">Our Partners</h2>
-            <p className="text-center text-xl text-slate-200 max-w-2xl mx-auto">Proud to collaborate with industry leaders who support our mission</p>
+            <h2 className="text-center text-4xl sm:text-6xl font-light text-gray-800 mb-4">Our Partners</h2>
+            <p className="text-center text-xl text-gray-600 max-w-2xl mx-auto">Proud to collaborate with industry leaders who support our mission</p>
           </div>
-          <div className="rounded-2xl p-8 backdrop-blur-sm border border-white/20" style={{ background: 'rgba(107, 123, 160, 0.3)' }}>
+          <div className="rounded-2xl p-8 backdrop-blur-sm border border-gray-200" style={{ background: 'rgba(107, 123, 160, 0.1)' }}>
             <Slider {...settings}>
               {sponsors.map((image, index) => (
                 <div key={index} className="carousel-item">
@@ -208,17 +208,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full flex flex-col p-6 sm:p-24" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
+        <section className="w-full flex flex-col p-6 sm:p-24 bg-white">
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-12 sm:mt-24">
             <div className="relative w-full sm:w-1/2 animate-fade-in-up">
-              <div className="text-4xl sm:text-7xl font-light text-white">
+              <div className="text-4xl sm:text-7xl font-light text-gray-800">
                 <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #6B7BA0, #3A3A6B)' }}></div>
                 Empowering Data <br />
                 Driven Innovation
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-slide-in-right">
-              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-gray-600 leading-relaxed">
                 Cornell Data Science (CDS) is an undergraduate project team
                 which builds data-driven solutions to a variety of real-world
                 problems. Our team of 92 students is a great place to meet
@@ -238,13 +238,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
             <div className="relative w-full sm:w-1/2 animate-slide-in-left">
-              <div className="text-4xl sm:text-7xl font-light text-white">
+              <div className="text-4xl sm:text-7xl font-light text-gray-800">
                 <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #3A3A6B, #1A1A3A)' }}></div>
                 Driving Data Science Excellence
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
-              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-gray-600 leading-relaxed">
                 We work on projects that span the spectrum of data science. From
                 applied deep learning to user-friendly visualizations, there is
                 likely someone on CDS working on it.
@@ -261,14 +261,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
             <div className="relative w-full sm:w-1/2 animate-slide-in-right">
-              <div className="text-4xl sm:text-7xl font-light text-white">
+              <div className="text-4xl sm:text-7xl font-light text-gray-800">
                 <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #1A1A3A, #6B7BA0)' }}></div>
                 Showcasing <br />
                 Data Science Impact
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
-              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-gray-600 leading-relaxed">
                 We connect industry and passionate students together through our
                 focus on data science. Come to our networking events, company
                 talks, and mentoring sessions to learn more about careers in
@@ -285,6 +285,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Transition section from white to gradient */}
+        <section className="w-full h-48 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-transparent"></div>
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(107, 123, 160, 0.05) 25%, rgba(107, 123, 160, 0.15) 50%, rgba(107, 123, 160, 0.4) 75%, rgba(107, 123, 160, 0.8) 100%)' }}></div>
+        </section>
+
         <section className="w-full flex flex-col p-6 sm:p-24 pt-12 sm:pt-24 text-white relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
           {/* Background decoration */}
           <div className="absolute inset-0 opacity-10">

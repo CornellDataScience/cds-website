@@ -64,8 +64,8 @@ html {
 
 body {
   font-family: "Sohne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(135deg, #54628F 0%, #232359 35%, #06061A 100%);
-  color: rgb(var(--text-primary));
+  background: white;
+  color: #1a1a1a;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
