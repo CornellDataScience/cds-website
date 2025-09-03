@@ -190,32 +190,35 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-full flex flex-col p-6 sm:p-24 bg-gradient-to-br from-gray-50 to-white">
+        <section className="w-full flex flex-col p-6 sm:p-24" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
           <div className="mb-8">
-            <h2 className="text-center text-4xl sm:text-6xl font-bold text-gradient mb-4">Our Partners</h2>
-            <p className="text-center text-xl text-gray-600 max-w-2xl mx-auto">Proud to collaborate with industry leaders who support our mission</p>
+            <h2 className="text-center text-4xl sm:text-6xl font-light text-white mb-4">Our Partners</h2>
+            <p className="text-center text-xl text-slate-200 max-w-2xl mx-auto">Proud to collaborate with industry leaders who support our mission</p>
           </div>
-          <div className="bg-white rounded-2xl shadow-soft p-8">
+          <div className="rounded-2xl p-8 backdrop-blur-sm border border-white/20" style={{ background: 'rgba(107, 123, 160, 0.3)' }}>
             <Slider {...settings}>
               {sponsors.map((image, index) => (
                 <div key={index} className="carousel-item">
-                  <img src={image} alt={`Sponsor ${index + 1}`} className="hover-lift" />
+                  <div className="bg-white/90 rounded-lg p-4 mx-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <img src={image} alt={`Sponsor ${index + 1}`} className="max-h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
+                  </div>
                 </div>
               ))}
             </Slider>
           </div>
         </section>
 
-        <section className="w-full flex flex-col p-6 sm:p-24 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
+        <section className="w-full flex flex-col p-6 sm:p-24" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-12 sm:mt-24">
             <div className="relative w-full sm:w-1/2 animate-fade-in-up">
-              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-purple-600 before:to-blue-600 before:rounded-full">
+              <div className="text-4xl sm:text-7xl font-light text-white">
+                <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #6B7BA0, #3A3A6B)' }}></div>
                 Empowering Data <br />
                 Driven Innovation
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-slide-in-right">
-              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
                 Cornell Data Science (CDS) is an undergraduate project team
                 which builds data-driven solutions to a variety of real-world
                 problems. Our team of 92 students is a great place to meet
@@ -235,12 +238,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
             <div className="relative w-full sm:w-1/2 animate-slide-in-left">
-              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-green-500 before:to-blue-600 before:rounded-full">
+              <div className="text-4xl sm:text-7xl font-light text-white">
+                <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #3A3A6B, #1A1A3A)' }}></div>
                 Driving Data Science Excellence
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
-              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
                 We work on projects that span the spectrum of data science. From
                 applied deep learning to user-friendly visualizations, there is
                 likely someone on CDS working on it.
@@ -257,13 +261,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-12 mt-24 sm:mt-48">
             <div className="relative w-full sm:w-1/2 animate-slide-in-right">
-              <div className="text-4xl sm:text-7xl font-bold text-gradient before:content-[''] before:absolute before:top-[-15px] sm:before:top-[-30px] before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-pink-500 before:to-purple-600 before:rounded-full">
+              <div className="text-4xl sm:text-7xl font-light text-white">
+                <div className="w-full h-1 rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #1A1A3A, #6B7BA0)' }}></div>
                 Showcasing <br />
                 Data Science Impact
               </div>
             </div>
             <div className="max-w-full sm:max-w-3xl mt-6 sm:mt-0 animate-fade-in-up">
-              <div className="text-xl sm:text-3xl font-light text-gray-700 leading-relaxed">
+              <div className="text-xl sm:text-3xl font-light text-slate-200 leading-relaxed">
                 We connect industry and passionate students together through our
                 focus on data science. Come to our networking events, company
                 talks, and mentoring sessions to learn more about careers in
@@ -280,17 +285,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full flex flex-col p-6 sm:p-24 pt-12 sm:pt-24 bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white relative overflow-hidden">
+        <section className="w-full flex flex-col p-6 sm:p-24 pt-12 sm:pt-24 text-white relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #6B7BA0 0%, #3A3A6B 35%, #1A1A3A 100%)' }}>
           {/* Background decoration */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-10 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500 rounded-full blur-3xl"></div>
+            <div className="absolute top-10 left-10 w-72 h-72 rounded-full blur-3xl" style={{ background: '#6B7BA0' }}></div>
+            <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full blur-3xl" style={{ background: '#3A3A6B' }}></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl" style={{ background: '#1A1A3A' }}></div>
           </div>
 
           <div className="flex flex-col sm:flex-row w-full space-x-0 sm:space-x-12 h-full relative z-10">
             <div className="w-full sm:w-1/3 animate-fade-in-up">
-              <div className="text-4xl sm:text-6xl font-bold text-white mb-8">
+              <div className="text-4xl sm:text-6xl font-light text-white mb-8">
                 Driving innovation and excellence through specialized subteams.
               </div>
               <div className="mt-10 mb-12 sm:mb-10">
@@ -338,7 +343,7 @@ export default function Home() {
           </div>
 
           <div className="flex-col items-center mt-20 sm:mt-32 justify-center sm:flex h-screen relative z-10">
-            <div className="text-4xl sm:text-7xl font-bold text-white text-center mb-8 animate-fade-in-up">
+            <div className="text-4xl sm:text-7xl font-light text-white text-center mb-8 animate-fade-in-up">
               Connect and Learn
             </div>
             <div className="flex justify-center items-center mt-8 mb-8 animate-pulse-glow">
