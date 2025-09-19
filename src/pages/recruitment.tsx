@@ -135,14 +135,14 @@ const Recruitment: React.FC = () => {
                       Freshmen/Transfers Info Session #1
                     </h3>
                     <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Thursday,
-                      September 25th
+                      <span className="font-medium">Date:</span> Wednesday,
+                      September 24th
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 5:00 - 6:00 PM
+                      <span className="font-medium">Time:</span> 4:30 - 5:30 PM
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Gates G01
+                      <span className="font-medium">Location:</span> Philips 219
                     </p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
