@@ -65,11 +65,11 @@ const Recruitment: React.FC = () => {
                     </p>
                     <p className="text-gray-700 text-center">
                       <span className="font-medium">Due:</span> Thursday,
-                      September 4th at 11:59 PM
+                      January 29th at 11:59 PM
                     </p>
                     <div className="text-center">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfRZNsWirgG9GY3yNQn05llHIyNTv5UMs7xD5m9EBrCW4ZSag/viewform"
+                        href="https://forms.gle/mFr9WqX89zSdNR2R9"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm"
@@ -88,11 +88,11 @@ const Recruitment: React.FC = () => {
                     </p>
                     <p className="text-gray-700 text-center">
                       <span className="font-medium">Due:</span> Thursday,
-                      October 16th at 11:59 PM
+                      January 29th at 11:59 PM
                     </p>
                     <div className="text-center">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdNjmA308YBUyIviuV-W7IGSfp0ebQyImvjVRwzF17FuwZTUQ/viewform?usp=header"
+                        href="https://forms.gle/mFr9WqX89zSdNR2R9"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-3 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm"
