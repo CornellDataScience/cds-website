@@ -6,7 +6,7 @@ import AndrewDaImg from "../../assets/img/members/AndrewDa.jpg";
 import AydanGerberImg from "../../assets/img/members/AydanGerber.jpg";
 import ChenkaiImg from "../../assets/img/members/ChenkaiShen.jpg";
 import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
-import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg } from "../../assets/img/members/default.jpg";
+import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as AustinZhangImg, default as SophiaLuImg } from "../../assets/img/members/default.jpg";
 import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
 import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
 import EvanImg from "../../assets/img/members/EvanYang.jpeg";
@@ -22,12 +22,6 @@ import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
-import BryanChungImg from "../../assets/img/members/BryanChung.jpg";
-import ConnieLuImg from "../../assets/img/members/ConnieLu.jpg";
-import WeiyunHsuImg from "../../assets/img/members/WeiyunHsu.jpg";
-import HenriqueAkabaneImg from "../../assets/img/members/HenriqueAkabane.jpg";
-import AustinZhangImg from "../../assets/img/members/AustinZhang.jpg";
-import SophiaLuImg from "../../assets/img/members/SophiaLu.jpg";
 
 const members = [
   {
