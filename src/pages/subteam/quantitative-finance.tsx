@@ -6,7 +6,7 @@ import AndrewDaImg from "../../assets/img/members/AndrewDa.jpg";
 import AydanGerberImg from "../../assets/img/members/AydanGerber.jpg";
 import ChenkaiImg from "../../assets/img/members/ChenkaiShen.jpg";
 import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
-import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as AustinZhangImg, default as SophiaLuImg } from "../../assets/img/members/default.jpg";
+import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as AustinZhangImg, default as SophiaLuImg, default as HenryJiImg, default as DerekXuImg, default as HaochenWangImg } from "../../assets/img/members/default.jpg";
 import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
 import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
 import EvanImg from "../../assets/img/members/EvanYang.jpeg";
@@ -177,21 +177,21 @@ const members = [
     title: "Member",
     name: "Henry Ji",
     description: "Sample Text",
-    img: null,
+    img: HenryJiImg.src,
     linkedin: null,
   },
   {
     title: "Member",
     name: "Derek Xu",
     description: "Sample Text",
-    img: null,
+    img: DerekXuImg.src,
     linkedin: null,
   },
   {
     title: "Member",
     name: "Haochen Wang",
     description: "Sample Text",
-    img: null,
+    img: HaochenWangImg.src,
     linkedin: null,
   },
   {
