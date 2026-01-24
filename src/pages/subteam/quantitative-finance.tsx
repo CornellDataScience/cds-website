@@ -6,7 +6,8 @@ import AndrewDaImg from "../../assets/img/members/AndrewDa.jpg";
 import AydanGerberImg from "../../assets/img/members/AydanGerber.jpg";
 import ChenkaiImg from "../../assets/img/members/ChenkaiShen.jpg";
 import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
-import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as ProfHaymHirshImg, default as TanviKapoorImg } from "../../assets/img/members/default.jpg";
+import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as AustinZhangImg, default as SophiaLuImg, default as HenryJiImg, default as DerekXuImg, default as HaochenWangImg } from "../../assets/img/members/default.jpg";
+import ProfHaymHirshImg from "../../assets/img/members/ProfHaymHirsh.jpg";
 import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
 import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
 import EvanImg from "../../assets/img/members/EvanYang.jpeg";
@@ -26,17 +27,17 @@ import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
 const members = [
   {
     title: "Subteam Lead",
-    name: "Peter Ha",
+    name: "Ronald Feng",
     description: "Sample Text",
-    img: PeterHaImg.src,
-    linkedin: null,
+    img: RonaldFeng.src,
+    linkedin: 'https://www.linkedin.com/in/ronald-feng-821770253/',
   },
   {
     title: "Subteam Lead",
     name: "Lucas He",
     description: "Sample Text",
     img: LucasImg.src,
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/lucashe309/",
   },
   {
     title: "Member",
@@ -44,6 +45,20 @@ const members = [
     description: "Sample Text",
     img: ElizabethSongImg.src,
     linkedin: "https://www.linkedin.com/in/elizabethyurisong/",
+  },
+  {
+    title: "Member",
+    name: "Peter Ha",
+    description: "Sample Text",
+    img: PeterHaImg.src,
+    linkedin: "https://www.linkedin.com/in/peter-soojong-ha/",
+  },
+  {
+    title: "Member",
+    name: "Noah Plant",
+    description: "Sample Text",
+    img: NoahPlantImg.src,
+    linkedin: "https://www.linkedin.com/in/noah-plant-804168289/",
   },
   {
     title: "Member",
@@ -59,78 +74,9 @@ const members = [
     img: JerryChenImg.src,
     linkedin: null,
   },
+  
   {
-    title: "Member",
-    name: "Rohan Shah",
-    description: "Sample Text",
-    img: RohanShahImg.src,
-    linkedin: null,
-  },
-  {
-    title: "Member",
-    name: "Jacob Mayourian",
-    description: "Sample Text",
-    img: JacobMayourianImg.src,
-    linkedin: null,
-  },
-  {
-    title: "Member",
-    name: "Noah Plant",
-    description: "Sample Text",
-    img: NoahPlantImg.src,
-    linkedin: null,
-  },
-  {
-    title: "Member",
-    name: "Alkiviades Boukas",
-    description: "Sample Text",
-    img: AlkiviadesBoukasImg.src,
-    linkedin: null,
-  },
-  {
-    title: "Member",
-    name: "Adona Anteneh",
-    description: "Sample Text",
-    img: AdonaAntenehImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Samara Silverman",
-    description: "Sample Text",
-    img: SamaraSilvermanImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Alyssa Serebrenik",
-    description: "Sample Text",
-    img: AlyssaSerebrenikImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Andrew Chen",
-    description: "Sample Text",
-    img: AndrewChenImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Arya Patel",
-    description: "Sample Text",
-    img: AryaPatelImg.src,
-    linkedin: 'https://www.linkedin.com/in/arya-c-patel/', // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Cody Torogovnik",
-    description: "Sample Text",
-    img: CodyTorogovnikImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
+    title: "Alumni",
     name: "Iram Liu",
     description: "Sample Text",
     img: IramLiuImg.src,
@@ -199,27 +145,7 @@ const members = [
     img: AarshaJoshiImg.src,
     linkedin: null, // No LinkedIn URL found in the data
   },
-  {
-    title: "Member",
-    name: "Aarav Khanna",
-    description: "Sample Text",
-    img: AaravKhannaImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Johnson Lin",
-    description: "Sample Text",
-    img: JohnsonLinImg.src,
-    linkedin: null, // No LinkedIn URL found in the data
-  },
-  {
-    title: "Member",
-    name: "Ronald Feng",
-    description: "Sample Text",
-    img: RonaldFeng.src,
-    linkedin: 'https://www.linkedin.com/in/ronald-feng-821770253/',
-  },
+  
   {
     title: "Member",
     name: "Katelyn Fu",
@@ -240,6 +166,147 @@ const members = [
     description: "Sample Text",
     img: AydanGerberImg.src,
     linkedin: "https://www.linkedin.com/in/aydan-gerber/",
+  },
+  {
+    title: "Member",
+    name: "Bryan Chung",
+    description: "Sample Text",
+    img: BryanChungImg.src,
+    linkedin: "https://www.linkedin.com/in/bc1201/",
+  },
+  {
+    title: "Member",
+    name: "Henry Ji",
+    description: "Sample Text",
+    img: HenryJiImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Derek Xu",
+    description: "Sample Text",
+    img: DerekXuImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Haochen Wang",
+    description: "Sample Text",
+    img: HaochenWangImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Connie Lu",
+    description: "Sample Text",
+    img: ConnieLuImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Weiyun Hsu",
+    description: "Sample Text",
+    img: WeiyunHsuImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Henrique Akabane",
+    description: "Sample Text",
+    img: HenriqueAkabaneImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Austin Zhang",
+    description: "Sample Text",
+    img: AustinZhangImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Sophia Lu",
+    description: "Sample Text",
+    img: SophiaLuImg.src,
+    linkedin: null,
+  },
+
+  {
+    title: "Member",
+    name: "Rohan Shah",
+    description: "Sample Text",
+    img: RohanShahImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Jacob Mayourian",
+    description: "Sample Text",
+    img: JacobMayourianImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Alkiviades Boukas",
+    description: "Sample Text",
+    img: AlkiviadesBoukasImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Adona Anteneh",
+    description: "Sample Text",
+    img: AdonaAntenehImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Samara Silverman",
+    description: "Sample Text",
+    img: SamaraSilvermanImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Alyssa Serebrenik",
+    description: "Sample Text",
+    img: AlyssaSerebrenikImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Andrew Chen",
+    description: "Sample Text",
+    img: AndrewChenImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Arya Patel",
+    description: "Sample Text",
+    img: AryaPatelImg.src,
+    linkedin: 'https://www.linkedin.com/in/arya-c-patel/', // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Cody Torogovnik",
+    description: "Sample Text",
+    img: CodyTorogovnikImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Aarav Khanna",
+    description: "Sample Text",
+    img: AaravKhannaImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Johnson Lin",
+    description: "Sample Text",
+    img: JohnsonLinImg.src,
+    linkedin: null, // No LinkedIn URL found in the data
   },
   {
     title: "Advisor",
