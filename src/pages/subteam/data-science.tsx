@@ -36,17 +36,24 @@ import { default as EmeraldImg, default as EricChenImg, default as JeromeHsu, de
 const members = [
   {
     title: "Subteam Lead",
-    name: "Deniz Bölöni-Turgut",
-    description: "Sample Text",
-    img: DenizImg.src,
-    linkedin: "https://www.linkedin.com/in/deniz-bt/",
-  },
-  {
-    title: "Subteam Lead",
     name: "Eric Do",
     description: "Sample Text",
     img: EricDoImg.src,
     linkedin: null,
+  },
+  {
+    title: "Subteam Lead",
+    name: "Letitia Soare",
+    description: "Sample Text",
+    img: LetitiaSoare.src,
+    linkedin: "https://www.linkedin.com/in/letitiasoare"
+  },
+  {
+    title: "Member",
+    name: "Deniz Bölöni-Turgut",
+    description: "Sample Text",
+    img: DenizImg.src,
+    linkedin: "https://www.linkedin.com/in/deniz-bt/",
   },
   {
     title: "Member",
@@ -257,13 +264,6 @@ const members = [
     description: "Sample Text",
     img: LeoQian.src,
     linkedin: "https://www.linkedin.com/in/leojqian/"
-  },
-  {
-    title: "Member",
-    name: "Letitia Soare",
-    description: "Sample Text",
-    img: LetitiaSoare.src,
-    linkedin: "https://www.linkedin.com/in/letitiasoare"
   },
   {
     title: "Member",

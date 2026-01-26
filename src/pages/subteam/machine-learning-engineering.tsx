@@ -27,17 +27,17 @@ import { default as AdenZhao, default as AndrewParkImg, default as EdwardImg, de
 const members = [
   {
     title: "Subteam Lead",
-    name: "Samantha Vaca",
+    name: "Jay Talwar",
     description: "Sample Text",
-    img: SamanthaImg.src,
-    linkedin: null,
+    img: JayImg.src,
+    linkedin: "https://www.linkedin.com/in/jayant-talwar-187155205/",
   },
   {
     title: "Subteam Lead",
-    name: "Minhaj Fahad",
+    name: "Rahi Dasgupta",
     description: "Sample Text",
-    img: MinhajImg.src,
-    linkedin: null,
+    img: RahiImg.src,
+    linkedin: "https://www.linkedin.com/in/rahi-dasgupta/",
   },
   {
     title: "Member",
@@ -146,10 +146,17 @@ const members = [
   },
   {
     title: "Member",
-    name: "Jay Talwar",
+    name: "Samantha Vaca",
     description: "Sample Text",
-    img: JayImg.src,
-    linkedin: "https://www.linkedin.com/in/jayant-talwar-187155205/",
+    img: SamanthaImg.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Minhaj Fahad",
+    description: "Sample Text",
+    img: MinhajImg.src,
+    linkedin: null,
   },
   {
     title: "Member",
@@ -178,13 +185,6 @@ const members = [
     description: "Sample Text",
     img: KaitlynImg.src,
     linkedin: "https://www.linkedin.com/in/kaitlynlu1/",
-  },
-  {
-    title: "Member",
-    name: "Rahi Dasgupta",
-    description: "Sample Text",
-    img: RahiImg.src,
-    linkedin: "https://www.linkedin.com/in/rahi-dasgupta/",
   },
   {
     title: "Member",

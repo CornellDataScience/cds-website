@@ -30,10 +30,10 @@ import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
 const members = [
   {
     title: "Subteam Lead",
-    name: "Lisa Li",
+    name: "Ella Schneyer",
     description: "Sample Text",
-    img: LisaImg.src,
-    linkedin: "https://www.linkedin.com/in/lisarli/",
+    img: EllaImg.src,
+    linkedin: "https://www.linkedin.com/in/ella-schneyer-06728227a/",
   },
   {
     title: "Subteam Lead",
@@ -41,6 +41,13 @@ const members = [
     description: "Sample Text",
     img: TanviImg.src,
     linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Lisa Li",
+    description: "Sample Text",
+    img: LisaImg.src,
+    linkedin: "https://www.linkedin.com/in/lisarli/",
   },
   {
     title: "Member",
@@ -160,13 +167,6 @@ const members = [
     description: "Sample Text",
     img: CindyImg.src,
     linkedin: "https://www.linkedin.com/in/cindy-li-569a30187/", // LinkedIn URL from the data
-  },
-  {
-    title: "Member",
-    name: "Ella Schneyer",
-    description: "Sample Text",
-    img: EllaImg.src,
-    linkedin: "https://www.linkedin.com/in/ella-schneyer-06728227a/", // LinkedIn URL from the data
   },
   {
     title: "Member",

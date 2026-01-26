@@ -142,46 +142,6 @@ const Recruitment: React.FC = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Special Events */}
-              <div className="bg-gradient-to-r from-green-50 to-yellow-50 p-6 rounded-lg border-l-4 border-green-500">
-                <h2 className="text-2xl font-semibold text-green-800 mb-4">
-                  🎉 Special Events
-                </h2>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-green-700">
-                      Project Team Fest
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Thursday,
-                      September 4th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 4:00 - 6:00 PM
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Duff
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-yellow-700">
-                      Club Fest
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Saturday,
-                      September 13th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> Noon (More
-                      details TBA)
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> TBA
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           {/* Google Calendar Section */}
