@@ -127,7 +127,7 @@ const Recruitment: React.FC = () => {
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h3 className="text-lg font-semibold text-green-700">
-                      AppDev Info Session
+                      CDS x AppDev Info Session
                     </h3>
                     <p className="text-gray-700">
                       <span className="font-medium">Date:</span> Wednesday,
