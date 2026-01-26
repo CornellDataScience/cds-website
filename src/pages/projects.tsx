@@ -12,8 +12,22 @@ import pocketmlImg from "../assets/img/pocketml.png";
 import img from "../assets/img/projects.jpg";
 import trivaiImg from "../assets/img/trivai.png";
 import vibeSyncImg from "../assets/img/vibesync.png";
+import computeClusterImg from "../assets/img/computecluster.png";
 
 const projects = [
+  {
+    semester: "Fall 2025",
+    title: "Compute Cluster",
+    description: "CDS Compute Cluster is an in-house cluster developed for the Cornell Data Science project team \
+    for compute and project resources. The cluster consists of five computers, with one head node \
+    and four compute nodes. Currently, the cluster hosts two LLMs using vLLM and Llama.cpp \
+    for use by CDS members as well as a health dashboard and the CDS website, accessible on the internet. It also \
+    provides a local pipeline for MathSearch, a previous CDS project that originally utilized AWS.",
+    imageUrl: computeClusterImg,
+    githubLink: "https://github.com/CornellDataScience/computecluster",
+    presentationLink: "https://docs.google.com/presentation/d/13YSIuWD8C4JliMCxbi6pEzFt7SUzFNQQ9xAK8TbKdiI/",
+    // tags: ["hey"]
+  },
   {
     semester: "Fall 2024",
     title: "VibeSync",
